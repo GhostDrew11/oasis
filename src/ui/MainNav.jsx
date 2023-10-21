@@ -15,8 +15,7 @@ const NavList = styled.ul`
 `;
 
 const StyledNavLink = styled(NavLink)`
-  &:link,
-  &:visited {
+  &:link {
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -29,8 +28,7 @@ const StyledNavLink = styled(NavLink)`
   }
 
   /* This works because react-router places the active class on the active NavLink */
-  &:hover,
-  &:active,
+
   &.active:link,
   &.active:visited {
     color: var(--color-grey-800);
